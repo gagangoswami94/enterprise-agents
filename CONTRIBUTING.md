@@ -1,427 +1,280 @@
-# 🤝 Contributing to Enterprise Agents
+# Contributing to Enterprise Agents
 
-First off, thank you for considering contributing to Enterprise Agents! It's people like you who make this collection of AI agents better for everyone.
+Enterprise Agents is an open-source collection of 300+ production-ready AI agent personalities for Claude Code, Cursor, Windsurf, GitHub Copilot, Aider, Gemini CLI, and more. Contributions are welcome — new agents, improvements to existing ones, and bug fixes.
 
-## 📋 Table of Contents
+The fastest path to a merged PR is a single, well-crafted agent file.
 
+---
+
+## Table of Contents
+
+- [Adding a New Agent](#adding-a-new-agent)
+- [Improving an Existing Agent](#improving-an-existing-agent)
+- [Agent File Structure](#agent-file-structure)
+- [What Makes a Great Agent](#what-makes-a-great-agent)
+- [Linting](#linting)
+- [PR Process](#pr-process)
+- [What Gets Merged vs. What Needs a Discussion](#what-gets-merged-vs-what-needs-a-discussion)
+- [PR Template](#pr-template)
 - [Code of Conduct](#code-of-conduct)
-- [How Can I Contribute?](#how-can-i-contribute)
-- [Agent Design Guidelines](#agent-design-guidelines)
-- [Pull Request Process](#pull-request-process)
-- [Style Guide](#style-guide)
-- [Community](#community)
 
 ---
 
-## 📜 Code of Conduct
+## Adding a New Agent
 
-This project and everyone participating in it is governed by our Code of Conduct. By participating, you are expected to uphold this code:
+1. Fork the repository: https://github.com/gagangoswami94/enterprise-agents
+2. Choose the right category directory (see the full list below).
+3. Create a file named `{category}-{role}.md` — e.g., `engineering-api-gateway-specialist.md`.
+4. Write your agent following the [file structure](#agent-file-structure) below.
+5. Lint it: `python agents.py lint path/to/your-agent.md`
+6. Rebuild integrations: `python agents.py convert`
+7. Open a PR.
 
-- **Be Respectful**: Treat everyone with respect. Healthy debate is encouraged, but personal attacks are not tolerated.
-- **Be Inclusive**: Welcome and support people of all backgrounds and identities.
-- **Be Collaborative**: What we create together is better than what we create alone.
-- **Be Professional**: Keep discussions focused on improving the agents and the community.
+### Category Directories
 
----
+| Directory | Domain |
+|---|---|
+| `engineering/` | Software development, infrastructure, DB, AI/ML |
+| `design/` | UX/UI, visual design, whimsy |
+| `marketing/` | Growth, content, social, SEO |
+| `sales/` | Sales strategy, coaching, enablement |
+| `product/` | PM, roadmap, discovery |
+| `finance/` | CFO, FP&A, accounting, tax, payroll |
+| `legal/` | Contracts, privacy, IP, compliance |
+| `strategy/` | Pricing, competitive intelligence, business model |
+| `people-ops/` | HR, recruiting, DEI, L&D |
+| `operations/` | Process, procurement, continuity |
+| `executive/` | CEO coaching, board prep, OKRs |
+| `healthcare/` | Medical writing, clinical docs, compliance |
+| `solopreneur/` | Solo founder, fractional roles |
+| `accessibility/` | ADA, inclusive design, WCAG audits |
+| `specialized/` | Unique specialists that don't fit elsewhere |
+| `game-development/` | Game design, narrative, audio, engine tools |
+| `spatial-computing/` | AR/VR/XR specialists |
+| `paid-media/` | PPC, display, paid social |
+| `testing/` | QA, test automation |
+| `support/` | Customer support, success |
+| `academic/` | Research, academic writing |
+| `project-management/` | PM coordination, delivery |
 
-## 🎯 How Can I Contribute?
-
-### 1. Create a New Agent
-
-Have an idea for a specialized agent? Great! Here's how to add one:
-
-1. **Fork the repository**
-2. **Choose the appropriate category** (or propose a new one):
-   - `engineering/` - Software development specialists
-   - `design/` - UX/UI and creative specialists
-   - `game-development/` - Game design and development specialists
-   - `marketing/` - Growth and marketing specialists
-   - `paid-media/` - Paid acquisition and media specialists
-   - `product/` - Product management specialists
-   - `project-management/` - PM and coordination specialists
-   - `testing/` - QA and testing specialists
-   - `support/` - Operations and support specialists
-   - `spatial-computing/` - AR/VR/XR specialists
-   - `specialized/` - Unique specialists that don't fit elsewhere
-
-3. **Create your agent file** following the template below
-4. **Test your agent** in real scenarios
-5. **Submit a Pull Request** with your agent
-
-### 2. Improve Existing Agents
-
-Found a way to make an agent better? Contributions welcome:
-
-- Add real-world examples and use cases
-- Enhance code samples with modern patterns
-- Update workflows based on new best practices
-- Add success metrics and benchmarks
-- Fix typos, improve clarity, enhance documentation
-
-### 3. Share Success Stories
-
-Used these agents successfully? Share your story:
-
-- Post in [GitHub Discussions](https://github.com/gagangoswami94/enterprise-agents/discussions)
-- Add a case study to the README
-- Write a blog post and link it
-- Create a video tutorial
-
-### 4. Report Issues
-
-Found a problem? Let us know:
-
-- Check if the issue already exists
-- Provide clear reproduction steps
-- Include context about your use case
-- Suggest potential solutions if you have ideas
+If your agent doesn't fit any existing category, propose a new one in a [Discussion](https://github.com/gagangoswami94/enterprise-agents/discussions) before submitting.
 
 ---
 
-## 🎨 Agent Design Guidelines
+## Improving an Existing Agent
 
-### Agent File Structure
+Good improvement PRs:
 
-Every agent should follow this structure:
+- Add concrete code or template examples where the original had vague descriptions
+- Sharpen success metrics with specific numbers ("reduce p95 latency below 200ms" not "improve performance")
+- Expand the workflow with steps that reflect real practice
+- Fix typos, broken formatting, or unclear phrasing
+- Update an agent to reflect a tool's current API or best practices
+
+If you want to do a large-scale reformatting pass across many agents — even a well-intentioned one — open a [Discussion](https://github.com/gagangoswami94/enterprise-agents/discussions) first. Bulk edits create merge conflicts for other contributors.
+
+---
+
+## Agent File Structure
+
+Every agent file is a Markdown document with YAML frontmatter followed by seven structured sections.
 
 ```markdown
 ---
 name: Agent Name
-description: One-line description of the agent's specialty and focus
-color: colorname or "#hexcode"
-emoji: 🎯
-vibe: One-line personality hook — what makes this agent memorable
-services:                              # optional — only if the agent requires external services
-  - name: Service Name
-    url: https://service-url.com
-    tier: free                         # free, freemium, or paid
+description: One-line specialty description — specific, not generic
+color: cyan
+emoji: "🎯"
+vibe: Personality hook — what makes this agent memorable
 ---
 
 # Agent Name
 
-## 🧠 Your Identity & Memory
-- **Role**: Clear role description
-- **Personality**: Personality traits and communication style
-- **Memory**: What the agent remembers and learns
-- **Experience**: Domain expertise and perspective
+## Your Identity & Memory
+Role, personality traits, domain background, perspective.
 
-## 🎯 Your Core Mission
-- Primary responsibility 1 with clear deliverables
-- Primary responsibility 2 with clear deliverables
-- Primary responsibility 3 with clear deliverables
-- **Default requirement**: Always-on best practices
+## Your Core Mission
+Primary responsibilities with concrete deliverables. Be specific.
 
-## 🚨 Critical Rules You Must Follow
-Domain-specific rules and constraints that define the agent's approach
+## Critical Rules You Must Follow
+Non-negotiable constraints and domain-specific standards.
+This section separates an agent from a generic prompt.
 
-## 📋 Your Technical Deliverables
-Concrete examples of what the agent produces:
-- Code samples
-- Templates
-- Frameworks
-- Documents
+## Your Technical Deliverables
+Concrete outputs: code samples, templates, frameworks, documents.
+Include real examples, not descriptions of examples.
 
-## 🔄 Your Workflow Process
-Step-by-step process the agent follows:
-1. Phase 1: Discovery and research
-2. Phase 2: Planning and strategy
-3. Phase 3: Execution and implementation
-4. Phase 4: Review and optimization
+## Your Workflow Process
+Step-by-step methodology the agent follows on every task.
 
-## 💭 Your Communication Style
-- How the agent communicates
-- Example phrases and patterns
-- Tone and approach
+## Your Communication Style
+Tone, register, preferred terminology, escalation behavior.
 
-## 🔄 Learning & Memory
-What the agent learns from:
-- Successful patterns
-- Failed approaches
-- User feedback
-- Domain evolution
-
-## 🎯 Your Success Metrics
-Measurable outcomes:
-- Quantitative metrics (with numbers)
-- Qualitative indicators
-- Performance benchmarks
-
-## 🚀 Advanced Capabilities
-Advanced techniques and approaches the agent masters
+## Your Success Metrics
+Measurable outcomes — quantitative where possible.
+"Page load under 3 seconds on 3G." "10,000+ karma across accounts."
 ```
 
-### Agent Structure
+**Required frontmatter fields:** `name`, `description`, `color`
 
-Agent files are organized into two semantic groups that map to
-OpenClaw's workspace format and help other tools parse your agent:
+**Optional frontmatter fields:**
 
-#### Persona (who the agent is)
-- **Identity & Memory** — role, personality, background
-- **Communication Style** — tone, voice, approach
-- **Critical Rules** — boundaries and constraints
+```yaml
+services:
+  - name: Service Name
+    url: https://service-url.com
+    tier: free   # free | freemium | paid
+```
 
-#### Operations (what the agent does)
-- **Core Mission** — primary responsibilities
-- **Technical Deliverables** — concrete outputs and templates
-- **Workflow Process** — step-by-step methodology
-- **Success Metrics** — measurable outcomes
-- **Advanced Capabilities** — specialized techniques
+Use `services` only when external APIs or platforms are essential to the agent's function. The agent must remain useful without them — strip the API calls and there should still be a coherent persona, workflow, and expertise underneath.
 
-No special formatting is required — just keep persona-related sections
-(identity, communication, rules) grouped separately from operational
-sections (mission, deliverables, workflow, metrics). The `convert.sh`
-script uses these section headers to automatically split agents into
-tool-specific formats.
+### How Sections Map to Tools
 
-### Agent Design Principles
-
-1. **🎭 Strong Personality**
-   - Give the agent a distinct voice and character
-   - Not "I am a helpful assistant" - be specific and memorable
-   - Example: "I default to finding 3-5 issues and require visual proof" (Evidence Collector)
-
-2. **📋 Clear Deliverables**
-   - Provide concrete code examples
-   - Include templates and frameworks
-   - Show real outputs, not vague descriptions
-
-3. **✅ Success Metrics**
-   - Include specific, measurable metrics
-   - Example: "Page load times under 3 seconds on 3G"
-   - Example: "10,000+ combined karma across accounts"
-
-4. **🔄 Proven Workflows**
-   - Step-by-step processes
-   - Real-world tested approaches
-   - Not theoretical - battle-tested
-
-5. **💡 Learning Memory**
-   - What patterns the agent recognizes
-   - How it improves over time
-   - What it remembers between sessions
-
-### External Services
-
-Agents may depend on external services (APIs, platforms, SaaS tools) when
-those services are essential to the agent's function. When they do:
-
-1. **Declare dependencies** in frontmatter using the `services` field
-2. **The agent must stand on its own** — strip the API calls and there
-   should still be a useful persona, workflow, and expertise underneath
-3. **Don't duplicate vendor docs** — reference them, don't reproduce them.
-   The agent file should read like an agent, not a getting-started guide
-4. **Prefer services with free tiers** so contributors can test the agent
-
-The test: *is this agent for the user, or for the vendor?* An agent that
-solves the user's problem using a service belongs here. A service's
-quickstart guide wearing an agent costume does not.
-
-### Tool-Specific Compatibility
-
-**Qwen Code Compatibility**: Agent bodies support `${variable}` templating for dynamic context (e.g., `${project_name}`, `${task_description}`). Qwen SubAgents use minimal frontmatter: only `name` and `description` are required; `color`, `emoji`, and `version` fields are omitted as Qwen doesn't use them.
-
-### What Makes a Great Agent?
-
-**Great agents have**:
-- ✅ Narrow, deep specialization
-- ✅ Distinct personality and voice
-- ✅ Concrete code/template examples
-- ✅ Measurable success metrics
-- ✅ Step-by-step workflows
-- ✅ Real-world testing and iteration
-
-**Avoid**:
-- ❌ Generic "helpful assistant" personality
-- ❌ Vague "I will help you with..." descriptions
-- ❌ No code examples or deliverables
-- ❌ Overly broad scope (jack of all trades)
-- ❌ Untested theoretical approaches
+The `convert.sh` pipeline splits agents into tool-specific formats automatically. Sections whose headers contain "identity", "communication", "style", or "critical rules" become the agent's persona layer (`SOUL.md` in OpenClaw). Everything else becomes the operational layer (`AGENTS.md`). No special markup is needed — just keep persona sections and operational sections semantically distinct.
 
 ---
 
-## 🔄 Pull Request Process
+## What Makes a Great Agent
 
-### What Belongs in a PR (and What Doesn't)
+A great agent has a narrow, deep specialty. It has a distinct voice — not "I am a helpful assistant" but a recognizable perspective that shapes how it approaches every problem. It delivers real artifacts: runnable code, filled-in templates, specific recommendations with numbers attached. Its workflow is something a practitioner would actually recognize and follow.
 
-The fastest path to a merged PR is **one markdown file** — a new or improved agent. That's the sweet spot.
+**Strong signals:**
 
-For anything beyond that, here's how we keep things smooth:
+- Specialty is narrow enough that a generalist wouldn't cover it well
+- Critical Rules section includes genuine constraints, not just "be helpful"
+- Code examples are real and runnable, not pseudocode
+- Success metrics have numbers
+- The workflow reflects how an expert actually works, not a generic "plan, execute, review" loop
+- Tested against at least one real task before submitting
 
-#### Always welcome as a PR
-- Adding a new agent (one `.md` file)
-- Improving an existing agent's content, examples, or personality
-- Fixing typos or clarifying docs
+**Weak signals that will require revision:**
 
-#### Start a Discussion first
-- New tooling, build systems, or CI workflows
-- Architectural changes (new directories, new scripts, site generators)
-- Changes that touch many files across the repo
-- New integration formats or platforms
+- Description says "helps with" or "assists in" rather than naming a specific outcome
+- Identity section reads like a job posting rather than a character
+- No code or template examples in Technical Deliverables
+- Success metrics are qualitative only ("high quality output")
+- Scope is so broad the agent competes with a general-purpose model
 
-We love ambitious ideas — a [Discussion](https://github.com/gagangoswami94/enterprise-agents/discussions) just gives the community a chance to align on approach before code gets written. It saves everyone time, especially yours.
+---
 
-#### Things we'll always close
-- **Committed build output**: Generated files (`_site/`, compiled assets, converted agent files) should never be checked in. Users run `convert.sh` locally; all output is gitignored.
-- **PRs that bulk-modify existing agents** without a prior discussion — even well-intentioned reformatting can create merge conflicts for other contributors.
+## Linting
 
-### Before Submitting
+Run the linter before submitting:
 
-1. **Test Your Agent**: Use it in real scenarios, iterate on feedback
-2. **Follow the Template**: Match the structure of existing agents
-3. **Add Examples**: Include at least 2-3 code/template examples
-4. **Define Metrics**: Include specific, measurable success criteria
-5. **Proofread**: Check for typos, formatting issues, clarity
+```bash
+# Validate all agents
+python agents.py lint
 
-### Submitting Your PR
+# Validate a specific file
+python agents.py lint engineering/engineering-my-specialist.md
+```
 
-1. **Fork** the repository
-2. **Create a branch**: `git checkout -b add-agent-name`
-3. **Make your changes**: Add your agent file(s)
-4. **Commit**: `git commit -m "Add [Agent Name] specialist"`
-5. **Push**: `git push origin add-agent-name`
-6. **Open a Pull Request** with:
-   - Clear title: "Add [Agent Name] - [Category]"
-   - Description of what the agent does
-   - Why this agent is needed (use case)
-   - Any testing you've done
+The linter checks for required frontmatter fields (`name`, `description`, `color`) and warns on missing recommended sections (`Identity`, `Core Mission`, `Critical Rules`). Fix all warnings before opening a PR.
 
-### PR Review Process
+After adding or modifying agents, rebuild the integrations:
 
-1. **Community Review**: Other contributors may provide feedback
-2. **Iteration**: Address feedback and make improvements
-3. **Approval**: Maintainers will approve when ready
-4. **Merge**: Your contribution becomes part of Enterprise Agents!
+```bash
+python agents.py convert
+```
 
-### PR Template
+The `integrations/` directory is generated output — never edit it directly, and do not commit it.
+
+---
+
+## PR Process
+
+### Before opening a PR
+
+- Run `python agents.py lint` — no warnings
+- Follow the file structure exactly — check an existing well-reviewed agent as a reference
+- Include at least 2–3 real code or template examples in Technical Deliverables
+- Test the agent against a real task, not just a proof-of-concept prompt
+- Write a PR description using the template below
+
+### Submitting
+
+```bash
+git checkout -b add-{agent-name}
+git add {category}/{filename}.md
+git commit -m "Add {Agent Name} specialist"
+git push origin add-{agent-name}
+```
+
+Open a PR against `main`. Title format: `Add {Agent Name} — {Category}`.
+
+### Review
+
+PRs are reviewed by maintainers and the community. Expect feedback on specificity, examples, and personality. Address it directly — a second pass usually resolves everything. Maintainers merge when the agent meets the bar.
+
+---
+
+## What Gets Merged vs. What Needs a Discussion
+
+### Merge directly as a PR
+
+- A new agent file (one `.md` file, linted and tested)
+- Improvements to an existing agent's content, examples, or accuracy
+- Typo fixes, formatting corrections, broken link repairs
+
+### Open a Discussion first
+
+- New tooling, build scripts, or CI changes
+- New integration formats or target tools
+- Architectural changes: new directories, renamed categories, schema changes
+- Any PR that touches more than a handful of files across the repo
+
+Discussions live at https://github.com/gagangoswami94/enterprise-agents/discussions. A discussion gives the community a chance to align on approach before code gets written, which saves everyone time — especially yours.
+
+### Closed without review
+
+- Committed build output — the `integrations/` directory is gitignored for a reason
+- Bulk reformatting of existing agents without a prior discussion
+- Agent files that are vendor quickstart guides rather than agent personalities
+
+---
+
+## PR Template
+
+Use this when opening a pull request:
 
 ```markdown
 ## Agent Information
-**Agent Name**: [Name]
-**Category**: [engineering/design/marketing/etc.]
-**Specialty**: [One-line description]
 
-## Motivation
-[Why is this agent needed? What gap does it fill?]
+**Agent Name**:
+**Category**:
+**File**: `{category}/{filename}.md`
+**Specialty**: One-line description of what this agent does
+
+## What This Agent Does
+
+[2–3 sentences. What problem does this agent solve? Who uses it and for what?]
+
+## Why It Belongs Here
+
+[What gap does this fill? Is there an existing agent it could overlap with, and if so, how is this different?]
 
 ## Testing
-[How have you tested this agent? Real-world use cases?]
+
+[How did you test this agent? What real task did you run it against? What did you learn from that iteration?]
 
 ## Checklist
-- [ ] Follows agent template structure
-- [ ] Includes personality and voice
-- [ ] Has concrete code/template examples
-- [ ] Defines success metrics
-- [ ] Includes step-by-step workflow
-- [ ] Proofread and formatted correctly
-- [ ] Tested in real scenarios
+
+- [ ] Frontmatter includes `name`, `description`, and `color`
+- [ ] All 7 sections are present
+- [ ] `Critical Rules` section contains genuine constraints, not filler
+- [ ] `Technical Deliverables` includes real code or template examples
+- [ ] `Success Metrics` includes at least one quantitative measure
+- [ ] `python agents.py lint` passes with no warnings
+- [ ] `python agents.py convert` has been run (output not committed)
+- [ ] Tested against a real task
 ```
 
 ---
 
-## 📐 Style Guide
+## Code of Conduct
 
-### Writing Style
-
-- **Be specific**: "Reduce page load by 60%" not "Make it faster"
-- **Be concrete**: "Create React components with TypeScript" not "Build UIs"
-- **Be memorable**: Give agents personality, not generic corporate speak
-- **Be practical**: Include real code, not pseudo-code
-
-### Formatting
-
-- Use **Markdown formatting** consistently
-- Include **emojis** for section headers (makes scanning easier)
-- Use **code blocks** for all code examples with proper syntax highlighting
-- Use **tables** for comparing options or showing metrics
-- Use **bold** for emphasis, `code` for technical terms
-
-### Code Examples
-
-```markdown
-## Example Code Block
-
-\`\`\`typescript
-// Always include:
-// 1. Language specification for syntax highlighting
-// 2. Comments explaining key concepts
-// 3. Real, runnable code (not pseudo-code)
-// 4. Modern best practices
-
-interface AgentExample {
-  name: string;
-  specialty: string;
-  deliverables: string[];
-}
-\`\`\`
-```
-
-### Tone
-
-- **Professional but approachable**: Not overly formal or casual
-- **Confident but not arrogant**: "Here's the best approach" not "Maybe you could try..."
-- **Helpful but not hand-holding**: Assume competence, provide depth
-- **Personality-driven**: Each agent should have a unique voice
+Keep discussions focused on the work. Critique agents, not contributors. Disagreements about direction belong in Discussions, not PR comments. Maintainers will close threads that become unproductive.
 
 ---
 
-## 🌟 Recognition
-
-Contributors who make significant contributions will be:
-
-- Listed in the README acknowledgments section
-- Highlighted in release notes
-- Featured in "Agent of the Week" showcases (if applicable)
-- Given credit in the agent file itself
-
----
-
-## 🤔 Questions?
-
-- **General Questions**: [GitHub Discussions](https://github.com/gagangoswami94/enterprise-agents/discussions)
-- **Bug Reports**: [GitHub Issues](https://github.com/gagangoswami94/enterprise-agents/issues)
-- **Feature Requests**: [GitHub Issues](https://github.com/gagangoswami94/enterprise-agents/issues)
-- **Community Chat**: [Join our discussions](https://github.com/gagangoswami94/enterprise-agents/discussions)
-
----
-
-## 📚 Resources
-
-### For New Contributors
-
-- [README.md](README.md) - Overview and agent catalog
-- [Example: Frontend Developer](engineering/engineering-frontend-developer.md) - Well-structured agent example
-- [Example: Reddit Community Builder](marketing/marketing-reddit-community-builder.md) - Great personality example
-- [Example: Whimsy Injector](design/design-whimsy-injector.md) - Creative specialist example
-
-### For Agent Design
-
-- Read existing agents for inspiration
-- Study the patterns that work well
-- Test your agents in real scenarios
-- Iterate based on feedback
-
----
-
-## 🎉 Thank You!
-
-Your contributions make Enterprise Agents better for everyone. Whether you're:
-
-- Adding a new agent
-- Improving documentation
-- Fixing bugs
-- Sharing success stories
-- Helping other contributors
-
-**You're making a difference. Thank you for building with us.**
-
----
-
-<div align="center">
-
-**Questions? Ideas? Feedback?**
-
-[Open an Issue](https://github.com/gagangoswami94/enterprise-agents/issues) • [Start a Discussion](https://github.com/gagangoswami94/enterprise-agents/discussions) • [Submit a PR](https://github.com/gagangoswami94/enterprise-agents/pulls)
-
-Made with ❤️ by the community
-
-</div>
+Questions? Open an issue or start a Discussion.
