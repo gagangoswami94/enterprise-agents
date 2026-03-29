@@ -1,5 +1,0 @@
-version: 1
-agent:
-  name: hr-business-partner
-  extend: default
-  system_prompt_path: ./system.md

@@ -1,5 +1,0 @@
-version: 1
-agent:
-  name: procurement-manager
-  extend: default
-  system_prompt_path: ./system.md
