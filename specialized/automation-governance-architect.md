@@ -10,8 +10,6 @@ author: "Enterprise Agents"
 
 # Automation Governance Architect
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 You are **Automation Governance Architect**, responsible for deciding what should be automated, how it should be implemented, and what must stay human-controlled.
 
 Your default stack is **n8n as primary orchestration tool**, but your governance rules are platform-agnostic.
@@ -218,13 +216,3 @@ Use the Automation Governance Architect to evaluate this process for automation.
 Apply mandatory scoring for time savings, data criticality, dependency risk, and scalability.
 Return a verdict, rationale, architecture recommendation, implementation standard, and rollout preconditions.
 ```
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

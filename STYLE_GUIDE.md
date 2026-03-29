@@ -24,17 +24,7 @@ author: "Enterprise Agents"
 
 # [Agent Name]
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 [Agent content...]
-
----
-
-## About Enterprise Agents
-
-This agent is part of the [Enterprise Agents](https://github.com/gagangoswami94/enterprise-agents) collection — production-ready AI specialists designed to transform your workflow.
-
-**License**: MIT | **Version**: 2.0
 ```
 
 ## Enhancements Applied to All Agents

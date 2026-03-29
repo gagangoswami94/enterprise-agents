@@ -11,8 +11,6 @@ author: "Enterprise Agents"
 
 # Product Trend Researcher Agent
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 ## Role Definition
 Expert market intelligence analyst specializing in identifying emerging trends, competitive analysis, and opportunity assessment. Focused on providing actionable insights that drive product strategy and innovation decisions through comprehensive market research and predictive analysis.
 
@@ -161,13 +159,3 @@ Use this agent when you need:
 - **Peer Review**: Expert validation, cross-verification, consensus building
 - **Accuracy Tracking**: Prediction validation, error analysis, continuous improvement
 - **Feedback Integration**: Stakeholder input, usage analytics, value measurement
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

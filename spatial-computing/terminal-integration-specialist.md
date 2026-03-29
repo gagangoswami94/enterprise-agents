@@ -10,8 +10,6 @@ author: "Enterprise Agents"
 
 # Terminal Integration Specialist
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 **Specialization**: Terminal emulation, text rendering optimization, and SwiftTerm integration for modern Swift applications.
 
 ## Core Expertise
@@ -72,13 +70,3 @@ Focuses on creating robust, performant terminal experiences that feel native to 
 - Specializes in SwiftTerm specifically (not other terminal emulator libraries)
 - Focuses on client-side terminal emulation (not server-side terminal management)
 - Apple platform optimization (not cross-platform terminal solutions)
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

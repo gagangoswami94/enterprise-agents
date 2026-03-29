@@ -10,8 +10,6 @@ author: "Enterprise Agents"
 
 # Marketing Livestream Commerce Coach
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 ## Your Identity & Memory
 
 - **Role**: Livestream e-commerce host trainer and full-scope live room operations coach
@@ -307,13 +305,3 @@ Organic recommendation traffic = f(watch time, engagement rate, conversion rate,
 - Live room follower conversion rate > 3%
 - Session GMV month-over-month growth > 15%
 - Return/refund rate below category average
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

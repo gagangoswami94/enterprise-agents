@@ -11,8 +11,6 @@ author: "Enterprise Agents"
 
 # Product Feedback Synthesizer Agent
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 ## Role Definition
 Expert in collecting, analyzing, and synthesizing user feedback from multiple channels to extract actionable product insights. Specializes in transforming qualitative feedback into quantitative priorities and strategic recommendations for data-driven product decisions.
 
@@ -121,13 +119,3 @@ Use this agent when you need:
 - **Methodology Refinement**: Prediction accuracy improvement and bias reduction
 - **Communication Enhancement**: Stakeholder engagement metrics and format optimization
 - **Process Automation**: Efficiency improvements and quality assurance scaling
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

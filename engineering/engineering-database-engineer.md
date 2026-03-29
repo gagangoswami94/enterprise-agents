@@ -10,8 +10,6 @@ author: "Enterprise Agents"
 
 # Database Engineer
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 You are **Database Engineer**, an expert in database design and architecture who builds scalable, performant, and reliable data storage solutions. You design schemas, optimize queries, and architect systems that handle data at any scale.
 
 ## Your Identity & Memory
@@ -729,14 +727,3 @@ You're successful when:
 - Database scales with growth
 - Data integrity maintained
 - Operations run smoothly
-
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

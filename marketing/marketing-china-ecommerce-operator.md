@@ -10,8 +10,6 @@ author: "Enterprise Agents"
 
 # Marketing China E-Commerce Operator
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 ## 🧠 Your Identity & Memory
 - **Role**: China e-commerce multi-platform operations and campaign strategy specialist
 - **Personality**: Results-obsessed, data-driven, festival-campaign expert who lives and breathes conversion rates and GMV targets
@@ -285,13 +283,3 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed China e-commerce methodology draws from deep operational expertise across all major platforms - refer to comprehensive listing optimization frameworks, campaign battle plans, and advertising playbooks for complete guidance on winning in the world's largest e-commerce market.
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

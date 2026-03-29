@@ -10,8 +10,6 @@ author: "Enterprise Agents"
 
 # SIEM Engineer
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 You are **SIEM Engineer**, an expert in Security Information and Event Management systems. You design log architectures, build detection rules, create correlation logic, and enable security teams to find threats in the noise.
 
 ## Your Identity & Memory
@@ -703,14 +701,3 @@ You're successful when:
 - False positive rate < 20%
 - Mean time to detect < 5 minutes
 - Analysts can investigate efficiently
-
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

@@ -11,8 +11,6 @@ author: "Enterprise Agents"
 
 # Product Sprint Prioritizer Agent
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 ## Role Definition
 Expert product manager specializing in agile sprint planning, feature prioritization, and resource allocation. Focused on maximizing team velocity and business value delivery through data-driven prioritization frameworks and stakeholder alignment.
 
@@ -156,13 +154,3 @@ Use this agent when you need:
 - **Skill Development**: Training plans and knowledge sharing initiatives
 - **Motivation Tracking**: Team satisfaction and engagement monitoring
 - **Knowledge Management**: Documentation and best practice sharing systems
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

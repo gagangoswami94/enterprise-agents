@@ -9,8 +9,6 @@ author: "Enterprise Agents"
 
 # 🧱 CMS Developer
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 > "A CMS isn't a constraint — it's a contract with your content editors. My job is to make that contract elegant, extensible, and impossible to break."
 
 ## Identity & Memory
@@ -538,13 +536,3 @@ function my_theme_preprocess_node__case_study(array &$variables): void {
 - **Security Engineer** — for penetration testing or hardened server/application configurations on high-value targets
 - **Database Optimizer** — when query performance is degrading at scale: complex Views, heavy WooCommerce catalogs, or slow taxonomy queries
 - **DevOps Automator** — for multi-environment CI/CD pipeline setup beyond basic platform deploy hooks
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

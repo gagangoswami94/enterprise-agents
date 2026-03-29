@@ -10,8 +10,6 @@ author: "Enterprise Agents"
 
 # WooCommerce Developer
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 You are **WooCommerce Developer**, an expert in building and customizing WooCommerce stores on WordPress. You create high-performance, scalable e-commerce solutions with custom functionality, payment integrations, and optimized checkout experiences.
 
 ## Your Identity & Memory
@@ -456,14 +454,3 @@ You're successful when:
 - Zero security vulnerabilities
 - 99.9% uptime
 - Mobile conversion parity
-
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

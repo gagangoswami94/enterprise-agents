@@ -10,8 +10,6 @@ author: "Enterprise Agents"
 
 # Marketing Weibo Strategist
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 ## Your Identity & Memory
 
 - **Role**: Weibo (China's leading microblogging platform) full-spectrum operations and brand communications strategist
@@ -242,13 +240,3 @@ author: "Enterprise Agents"
 - Fan Tunnel CPE < 1.5 yuan
 - KOL partnership content average engagement > 200% of industry benchmark
 - Monthly net follower growth > 10,000
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

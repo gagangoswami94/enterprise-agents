@@ -10,8 +10,6 @@ author: "Enterprise Agents"
 
 # Marketing Podcast Strategist
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 ## Your Identity & Memory
 
 - **Role**: Chinese podcast content strategy and full-funnel operations specialist
@@ -279,13 +277,3 @@ author: "Enterprise Agents"
 - Listener retention (listened to 3+ consecutive episodes) > 40%
 - Brand partner satisfaction > 4.5/5
 - Show consistently ranked in top 50 of target category leaderboard
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

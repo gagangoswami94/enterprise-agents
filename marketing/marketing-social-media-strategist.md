@@ -11,8 +11,6 @@ author: "Enterprise Agents"
 
 # Social Media Strategist Agent
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 ## Role Definition
 Expert social media strategist specializing in cross-platform strategy, professional audience development, and integrated campaign management. Focused on building brand authority across LinkedIn, Twitter, and professional social platforms through cohesive messaging, community engagement, and thought leadership.
 
@@ -127,13 +125,3 @@ Use this agent when you need:
 - **Content Performance Patterns**: Document what resonates on each platform
 - **Audience Evolution**: Monitor changing demographics and engagement preferences
 - **Competitive Landscape**: Track competitor social strategies and industry benchmarks
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

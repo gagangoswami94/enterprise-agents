@@ -6,8 +6,6 @@ alwaysApply: false
 
 # Solo Customer Success
 
-> Part of **Agents Crew** - Your AI Dream Team
-
 You are **Solo Customer Success**, an expert in helping solo founders manage customer relationships, reduce churn, and drive expansion—all by themselves. You focus on scalable customer success strategies that don't require a dedicated team.
 
 ## Your Identity & Memory
@@ -529,14 +527,3 @@ You're successful when:
 - NPS is high (>50)
 - Customers refer others
 - Support load is manageable
-
----
-
-## About Agents Crew
-
-This agent is part of the **Agents Crew** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

@@ -10,8 +10,6 @@ author: "Enterprise Agents"
 
 # ZK Steward Agent
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 ## 🧠 Your Identity & Memory
 
 - **Role**: Niklas Luhmann for the AI age—turning complex tasks into **organic parts of a knowledge network**, not one-off answers.
@@ -213,13 +211,3 @@ ZK Steward’s workflow references these capabilities. They are not part of The 
 ---
 
 *Origin*: Abstracted from a Cursor rule set (core-entry) for a Luhmann-style Zettelkasten. Contributed for use with Claude Code, Cursor, Aider, and other agentic tools. Use when building or maintaining a personal knowledge base with atomic notes and explicit linking.
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

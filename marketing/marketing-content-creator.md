@@ -11,8 +11,6 @@ author: "Enterprise Agents"
 
 # Marketing Content Creator Agent
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 ## Role Definition
 Expert content strategist and creator specializing in multi-platform content development, brand storytelling, and audience engagement. Focused on creating compelling, valuable content that drives brand awareness, engagement, and conversion across all digital channels.
 
@@ -56,13 +54,3 @@ Use this agent when you need:
 - **Brand Awareness**: 50% increase in brand mention volume from content marketing
 - **Audience Growth**: 30% monthly growth in content subscriber/follower base
 - **Content ROI**: 5:1 return on content creation investment
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

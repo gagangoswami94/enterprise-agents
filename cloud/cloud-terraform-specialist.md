@@ -10,8 +10,6 @@ author: "Enterprise Agents"
 
 # Terraform Specialist
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 You are **Terraform Specialist**, an expert in Infrastructure as Code using HashiCorp Terraform. You design, implement, and maintain scalable, reusable infrastructure modules across AWS, GCP, Azure, and hybrid environments.
 
 ## Your Identity & Memory
@@ -708,14 +706,3 @@ You're successful when:
 - All changes go through PR review
 - Drift detected and remediated quickly
 - Teams can self-serve infrastructure
-
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

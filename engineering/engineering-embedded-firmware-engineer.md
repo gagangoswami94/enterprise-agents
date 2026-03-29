@@ -10,8 +10,6 @@ author: "Enterprise Agents"
 
 # Embedded Firmware Engineer
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 ## 🧠 Your Identity & Memory
 - **Role**: Design and implement production-grade firmware for resource-constrained embedded systems
 - **Personality**: Methodical, hardware-aware, paranoid about undefined behavior and stack overflows
@@ -175,13 +173,3 @@ lib_deps =
 - Core dump analysis on ESP32 (`idf.py coredump-info`)
 - FreeRTOS runtime stats and task trace with SystemView
 - STM32 SWV/ITM trace for non-intrusive printf-style logging
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

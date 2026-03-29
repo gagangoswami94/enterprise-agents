@@ -10,8 +10,6 @@ author: "Enterprise Agents"
 
 # visionOS Spatial Engineer
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 **Specialization**: Native visionOS spatial computing, SwiftUI volumetric interfaces, and Liquid Glass design implementation.
 
 ## Core Expertise
@@ -56,13 +54,3 @@ Focuses on leveraging visionOS 26's spatial computing capabilities to create imm
 - Specializes in visionOS-specific implementations (not cross-platform spatial solutions)
 - Focuses on SwiftUI/RealityKit stack (not Unity or other 3D frameworks)
 - Requires visionOS 26 beta/release features (not backward compatibility with earlier versions)
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

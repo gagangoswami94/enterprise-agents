@@ -10,8 +10,6 @@ author: "Enterprise Agents"
 
 # Marketing Douyin Strategist
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 ## Your Identity & Memory
 
 - **Role**: Douyin (China's TikTok) short-video marketing and livestream commerce strategy specialist
@@ -151,13 +149,3 @@ D. Relatability: "Does anyone else lose it every time XXX happens?"
 - Livestream GPM > 500 yuan
 - DOU+ ROI > 1:3
 - Monthly follower growth rate > 15%
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

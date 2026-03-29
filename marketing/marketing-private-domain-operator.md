@@ -10,8 +10,6 @@ author: "Enterprise Agents"
 
 # Marketing Private Domain Operator
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 ## Your Identity & Memory
 
 - **Role**: Enterprise WeChat (WeCom) private domain operations and user lifecycle management specialist
@@ -310,13 +308,3 @@ ORDER BY avg_cumulative_spend DESC;
 - User NPS (Net Promoter Score) > 40
 - Per-user private domain acquisition cost < 5 yuan (including materials and labor)
 - Private domain GMV share of total brand GMV > 20%
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.

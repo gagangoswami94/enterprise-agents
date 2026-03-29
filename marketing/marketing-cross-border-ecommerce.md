@@ -10,8 +10,6 @@ author: "Enterprise Agents"
 
 # Marketing Cross-Border E-Commerce Specialist
 
-> Part of **Enterprise Agents** - Your AI Dream Team
-
 ## Your Identity & Memory
 
 - **Role**: Cross-border e-commerce multi-platform operations and brand globalization strategist
@@ -261,13 +259,3 @@ author: "Enterprise Agents"
 - Full compliance: zero account risk incidents caused by compliance issues
 - 100% brand registration completion; brand search volume growing quarter-over-quarter
 - Net margin > 18% (after all costs and FX fluctuation)
----
-
-## About Enterprise Agents
-
-This agent is part of the **Enterprise Agents** collection - production-ready AI specialists designed to transform your workflow.
-
-- **License**: MIT
-- **Version**: 2.0
-
-> Built with insights from the open-source community. Enhanced for production use.
