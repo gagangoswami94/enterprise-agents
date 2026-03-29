@@ -1,11 +1,11 @@
 <div align="center">
 
-# Enterprise Agents — 300+ AI Agent Personalities for Claude Code, Cursor & Windsurf
+# Enterprise Agents — 280+ AI Agent Personalities for Claude Code, Cursor & Windsurf
 
 **The largest open-source collection of production-ready AI agent personalities. Deploy specialist subagents into Claude Code, Cursor rules, Windsurf, GitHub Copilot, Aider, and 6 more tools — in one command.**
 
-[![Agents](https://img.shields.io/badge/agents-300%2B-blueviolet?style=for-the-badge)](https://github.com/gagangoswami94/enterprise-agents)
-[![Domains](https://img.shields.io/badge/domains-28-blue?style=for-the-badge)](https://github.com/gagangoswami94/enterprise-agents)
+[![Agents](https://img.shields.io/badge/agents-280%2B-blueviolet?style=for-the-badge)](https://github.com/gagangoswami94/enterprise-agents)
+[![Domains](https://img.shields.io/badge/domains-30-blue?style=for-the-badge)](https://github.com/gagangoswami94/enterprise-agents)
 [![Tools](https://img.shields.io/badge/tools-11-green?style=for-the-badge)](https://github.com/gagangoswami94/enterprise-agents)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.8%2B-brightgreen?style=for-the-badge)](agents.py)
@@ -21,7 +21,7 @@ cd enterprise-agents && python agents.py convert && python agents.py install
 
 ## What This Is
 
-**Enterprise Agents** gives you a curated library of 300+ structured AI agent personalities — each with a defined identity, workflow, and success metrics — ready to install as Claude Code subagents, Cursor `.mdc` rules, Windsurf `.windsurfrules`, GitHub Copilot instructions, Aider `CONVENTIONS.md`, Gemini CLI extensions, and more.
+**Enterprise Agents** gives you a curated library of 280+ structured AI agent personalities — each with a defined identity, workflow, and success metrics — ready to install as Claude Code subagents, Cursor `.mdc` rules, Windsurf `.windsurfrules`, GitHub Copilot instructions, Aider `CONVENTIONS.md`, Gemini CLI extensions, and more.
 
 Stop writing one-off prompts. Start working with a Backend Architect who knows your stack, a Security Engineer who reviews for OWASP Top 10, or a Growth Hacker who speaks conversion rate and CAC. Agents span 28 domains across engineering, marketing, finance, legal, sales, design, and product. One-command install. Zero dependencies. MIT licensed.
 
@@ -153,124 +153,220 @@ python agents.py install                     Auto-detect + install everything
 python agents.py install --tool claude-code  Install for one tool
 python agents.py list                        Browse the full 300+ catalog
 python agents.py list --cat engineering      Filter by domain
+python agents.py list --cat marketing       Filter by domain
 ```
 
 ---
 
-## 300+ Agents Across 28 Domains
+## Agent Roster — 280 Specialists Across 30 Domains
 
 <details>
-<summary><strong>Engineering (34 agents)</strong></summary>
+<summary><strong>⚙️ Engineering — 34 agents</strong></summary>
 
-Backend Architect · Frontend Developer · Software Architect · Solution Architect · Enterprise Architect · Security Engineer · SRE · DevOps Automator · Data Engineer · Database Optimizer · Database Engineer · DBA · Infrastructure Architect · Network Engineer · AI Engineer · AI Data Remediation Engineer · Code Reviewer · Technical Writer · Rapid Prototyper · Senior Developer · Mobile App Builder · Embedded Firmware Engineer · Git Workflow Master · Incident Response Commander · CMS Developer · Feishu Integration Developer · WeChat Mini Program Developer · Filament Optimization Specialist · Email Intelligence Engineer · Solidity Smart Contract Engineer · Threat Detection Engineer · Autonomous Optimization Architect · Technical BA · LSP/Index Engineer
+AI Data Remediation Engineer · AI Engineer · Autonomous Optimization Architect · Backend Architect · CMS Developer · Code Reviewer · Data Engineer · Database Administrator · Database Engineer · Database Optimizer · DevOps Automator · Email Intelligence Engineer · Embedded Firmware Engineer · Enterprise Architect · Feishu Integration Developer · Filament Optimization Specialist · Frontend Developer · Git Workflow Master · Incident Response Commander · Infrastructure Architect · Mobile App Builder · Network Engineer · Rapid Prototyper · Security Engineer · Senior Developer · Site Reliability Engineer · Software Architect · Solidity Smart Contract Engineer · Solution Architect · Technical Business Analyst · Technical Writer · Threat Detection Engineer · LSP/Index Engineer · WeChat Mini Program Developer
 
 </details>
 
 <details>
-<summary><strong>Marketing (39 agents)</strong></summary>
+<summary><strong>📣 Marketing — 39 agents</strong></summary>
 
-Growth Hacker · SEO Specialist · Brand Strategist · Content Creator · TikTok Strategist · LinkedIn Content Creator · Instagram Curator · Reddit Community Builder · Twitter Engager · YouTube Optimizer · Podcast Strategist · Influencer Marketing · Performance Marketer · Community Marketing Manager · Market Research Analyst · Product Marketing Manager · Launch Campaign Manager · Retention Specialist · App Store Optimizer · AI Citation Strategist · Book Co-Author · PR/Communications · Short Video Editing Coach · Carousel Growth Engine · Douyin Strategist · Kuaishou Strategist · Xiaohongshu Specialist · WeChat Official Account · Weibo Strategist · Bilibili Strategist · Zhihu Strategist · Baidu SEO · China Market Localization · Cross-Border E-Commerce · Livestream Commerce Coach · Private Domain Operator · Consumer Psychologist · Social Media Strategist · China E-Commerce Operator
-
-</details>
-
-<details>
-<summary><strong>Cybersecurity (7 agents)</strong></summary>
-
-Penetration Tester · AppSec Engineer · Zero Trust Architect · SOC Analyst · SIEM Engineer · GRC Specialist · Cloud Security Architect
+AI Citation Strategist · App Store Optimizer · Baidu SEO Specialist · Bilibili Content Strategist · Book Co-Author · Brand Strategist · Carousel Growth Engine · China E-Commerce Operator · China Market Localization Strategist · Community Marketing Manager · Consumer Psychologist · Content Creator · Cross-Border E-Commerce Specialist · Douyin Strategist · Growth Hacker · Influencer Marketing Specialist · Instagram Curator · Kuaishou Strategist · Launch Campaign Manager · LinkedIn Content Creator · Livestream Commerce Coach · Market Research Analyst · Performance Marketer · Podcast Strategist · PR & Communications Specialist · Private Domain Operator · Product Marketing Manager · Reddit Community Builder · Retention Marketing Specialist · SEO Specialist · Short-Video Editing Coach · Social Media Strategist · TikTok Strategist · Twitter Engager · Video Optimization Specialist · WeChat Official Account Manager · Weibo Strategist · Xiaohongshu Specialist · Zhihu Strategist
 
 </details>
 
 <details>
-<summary><strong>Cloud (5 agents)</strong></summary>
+<summary><strong>💰 Sales — 8 agents</strong></summary>
 
-AWS Solutions Architect · Kubernetes Specialist · Terraform Specialist · FinOps Analyst · Platform Engineer
-
-</details>
-
-<details>
-<summary><strong>Finance (10 agents)</strong></summary>
-
-CFO Advisor · FP&A Analyst · Controller · Bookkeeper · Budget Analyst · Tax Specialist · Treasury Analyst · Internal Auditor · Payroll Manager · Accounts Receivable Manager
+Account Strategist · Deal Strategist · Discovery Coach · Outbound Strategist · Pipeline Analyst · Proposal Strategist · Sales Coach · Sales Engineer
 
 </details>
 
 <details>
-<summary><strong>Sales (8 agents)</strong></summary>
+<summary><strong>🎨 Design — 8 agents</strong></summary>
 
-Deal Strategist · Outbound Strategist · Discovery Coach · Sales Engineer · Proposal Strategist · Sales Coach · Account Strategist · Pipeline Analyst
-
-</details>
-
-<details>
-<summary><strong>Design (8 agents)</strong></summary>
-
-UX Architect · UX Researcher · UI Designer · Brand Guardian · Visual Storyteller · Whimsy Injector · Image Prompt Engineer · Inclusive Visuals Specialist
+Brand Guardian · Image Prompt Engineer · Inclusive Visuals Specialist · UI Designer · UX Architect · UX Researcher · Visual Storyteller · Whimsy Injector
 
 </details>
 
 <details>
-<summary><strong>Game Development (20 agents)</strong></summary>
+<summary><strong>📦 Product — 5 agents</strong></summary>
 
-Game Designer · Narrative Designer · Level Designer · Game Audio Engineer · Technical Artist · Unity Architect · Unity Shader Graph Artist · Unity Multiplayer Engineer · Unity Editor Tool Developer · Unreal Systems Engineer · Unreal Technical Artist · Unreal Multiplayer Architect · Unreal World Builder · Godot Gameplay Scripter · Godot Shader Developer · Godot Multiplayer Engineer · Blender Add-on Engineer · Roblox Systems Scripter · Roblox Experience Designer · Roblox Avatar Creator
-
-</details>
-
-<details>
-<summary><strong>Spatial Computing (6 agents)</strong></summary>
-
-visionOS Spatial Engineer · XR Immersive Developer · XR Interface Architect · XR Cockpit Interaction Specialist · macOS Spatial/Metal Engineer · Terminal Integration Specialist
+Behavioral Nudge Engine · Feedback Synthesizer · Product Manager · Sprint Prioritizer · Trend Researcher
 
 </details>
 
 <details>
-<summary><strong>Specialized (28 agents)</strong></summary>
+<summary><strong>💵 Finance — 10 agents</strong></summary>
 
-Workflow Architect · MCP Builder · Blockchain Security Auditor · Salesforce Architect · Automation Governance Architect · Compliance Auditor · Corporate Training Designer · Cultural Intelligence Strategist · Developer Advocate · Document Generator · French Consulting Market Navigator · Government Digital Presales Consultant · Healthcare Marketing Compliance · Identity Graph Operator · Korean Business Navigator · LSP/Index Engineer · Model QA Specialist · Recruitment Specialist · Sales Data Extraction Agent · Data Consolidation Agent · Report Distribution Agent · Agentic Identity & Trust Architect · Agents Orchestrator · Supply Chain Strategist · Study Abroad Advisor · Civil Engineer · ZK Steward · Accounts Payable Agent
+Accounts Receivable Manager · Bookkeeper · Budget Analyst · CFO Advisor · Financial Controller · FP&A Analyst · Internal Auditor · Payroll Manager · Tax Specialist · Treasury Analyst
 
 </details>
 
 <details>
-<summary><strong>All Other Domains</strong></summary>
+<summary><strong>⚖️ Legal — 8 agents</strong></summary>
 
-**AI/ML (7):** RAG Architect · MLOps · LLM Fine-Tuning · AI Agent Developer · AI Safety · Computer Vision · Prompt Engineer
+Contract Manager · Corporate Counsel · Employment Law Advisor · IP Specialist · Legal Operations Manager · Licensing Manager · Privacy & GDPR Specialist · Software Lawyer
 
-**Legal (8):** Contract Manager · Privacy Specialist · IP Specialist · Corporate Counsel · Employment Advisor · Software Lawyer · Licensing Manager · Legal Operations Manager
+</details>
 
-**Product (5):** Product Manager · Sprint Prioritizer · Feedback Synthesizer · Behavioral Nudge Engine · Trend Researcher
+<details>
+<summary><strong>♟️ Strategy — 4 agents</strong></summary>
 
-**People Ops (10):** Recruiter · HR Business Partner · DEI Specialist · L&D Specialist · Performance Management · Employer Branding · HRIS Administrator · HR Compliance · Compensation & Benefits · Employee Experience
+Business Model Analyst · Competitive Intelligence Analyst · Pricing Analyst · Strategy Consultant
 
-**Executive (6):** CEO Coach · Chief of Staff · Board Prep · OKR Facilitator · Investor Relations · Strategic Planning
+</details>
 
-**Operations (6):** Process Analyst · Procurement Manager · QA Manager · Business Continuity Planner · Facilities Manager · Operations Manager
+<details>
+<summary><strong>👥 People Ops — 10 agents</strong></summary>
 
-**Strategy (4):** Pricing Analyst · Competitive Intel · Business Model · Strategy Consultant
+Compensation & Benefits Specialist · DEI Specialist · Employee Experience Manager · Employer Branding Specialist · HR Business Partner · HR Compliance Specialist · HRIS Administrator · Learning & Development Specialist · Performance Management Specialist · Talent Acquisition Specialist
 
-**Healthcare (5):** Medical Writer · Clinical Documentation · Compliance · Patient Experience · Administrator
+</details>
 
-**Paid Media (7):** PPC Strategist · Programmatic Buyer · Paid Social Strategist · Ad Creative Strategist · Search Query Analyst · Paid Media Auditor · Tracking Specialist
+<details>
+<summary><strong>🔧 Operations — 6 agents</strong></summary>
 
-**Fintech (6):** Quant Analyst · Payment Systems Architect · Risk Manager · RegTech Specialist · Blockchain Developer · Trading Systems Engineer
+Business Continuity Planner · Business Process Analyst · Facilities Manager · Operations Manager · Procurement Manager · Quality Assurance Manager
 
-**Ecommerce (5):** Shopify Expert · Amazon Seller Specialist · WooCommerce Developer · Conversion Rate Optimizer · Inventory Manager
+</details>
 
-**Content (5):** Copywriter · Newsletter Strategist · Video Producer · Podcast Producer · Community Manager
+<details>
+<summary><strong>🏢 Executive — 6 agents</strong></summary>
 
-**Testing (8):** API Tester · Performance Benchmarker · Accessibility Auditor · Tool Evaluator · Evidence Collector · Reality Checker · Workflow Optimizer · Test Results Analyzer
+Board Meeting Specialist · CEO Coach · Chief of Staff · Investor Relations Specialist · OKR Facilitator · Strategic Planning Specialist
 
-**Support (6):** Support Responder · Analytics Reporter · Finance Tracker · Executive Summary Generator · Legal Compliance Checker · Infrastructure Maintainer
+</details>
 
-**Academic (5):** Psychologist · Historian · Anthropologist · Narratologist · Geographer
+<details>
+<summary><strong>🔐 Cybersecurity — 7 agents</strong></summary>
 
-**Solopreneur (8):** Solo Founder · Fractional CFO · Fractional CTO · Full-Stack Dev · Bootstrapper Finance · Executive Assistant · Marketing · Customer Success
+AppSec Engineer · Cloud Security Architect · GRC Specialist · Penetration Tester · SIEM Engineer · SOC Analyst · Zero Trust Architect
 
-**Project Management (6):** Senior PM · Studio Producer · Jira Workflow Steward · Project Shepherd · Studio Operations · Experiment Tracker
+</details>
 
-**Data Science (3):** Data Scientist · Analytics Engineer · Data Analyst
+<details>
+<summary><strong>☁️ Cloud — 5 agents</strong></summary>
 
-**Accessibility (3):** ADA Specialist · Accessibility Auditor · Inclusive Design
+AWS Solutions Architect · FinOps Analyst · Kubernetes Specialist · Platform Engineer · Terraform Specialist
 
-**Customer Success (5):** CSM · Implementation Consultant · Onboarding Specialist · Renewal Manager · Technical Account Manager
+</details>
+
+<details>
+<summary><strong>🤖 AI / ML — 7 agents</strong></summary>
+
+AI Agent Developer · AI Safety Specialist · Computer Vision Engineer · LLM Fine-Tuning Specialist · MLOps Engineer · Prompt Engineer · RAG Architect
+
+</details>
+
+<details>
+<summary><strong>📊 Data Science — 3 agents</strong></summary>
+
+Analytics Engineer · Data Analyst · Data Scientist
+
+</details>
+
+<details>
+<summary><strong>🏦 Fintech — 6 agents</strong></summary>
+
+Blockchain Developer · Payment Systems Architect · Quantitative Analyst · RegTech Specialist · Risk Manager · Trading Systems Engineer
+
+</details>
+
+<details>
+<summary><strong>🏥 Healthcare — 5 agents</strong></summary>
+
+Clinical Documentation Specialist · Healthcare Administrator · Healthcare Compliance Specialist · Medical Writer · Patient Experience Specialist
+
+</details>
+
+<details>
+<summary><strong>📢 Paid Media — 7 agents</strong></summary>
+
+Ad Creative Strategist · Paid Media Auditor · Paid Social Strategist · PPC Campaign Strategist · Programmatic & Display Buyer · Search Query Analyst · Tracking & Measurement Specialist
+
+</details>
+
+<details>
+<summary><strong>🛒 Ecommerce — 5 agents</strong></summary>
+
+Amazon Seller Specialist · Conversion Rate Optimizer · Inventory Manager · Shopify Expert · WooCommerce Developer
+
+</details>
+
+<details>
+<summary><strong>✍️ Content — 5 agents</strong></summary>
+
+Community Manager · Copywriter · Newsletter Strategist · Podcast Producer · Video Producer
+
+</details>
+
+<details>
+<summary><strong>🧪 Testing — 8 agents</strong></summary>
+
+Accessibility Auditor · API Tester · Evidence Collector · Performance Benchmarker · Reality Checker · Test Results Analyzer · Tool Evaluator · Workflow Optimizer
+
+</details>
+
+<details>
+<summary><strong>🎧 Support — 6 agents</strong></summary>
+
+Analytics Reporter · Executive Summary Generator · Finance Tracker · Infrastructure Maintainer · Legal Compliance Checker · Support Responder
+
+</details>
+
+<details>
+<summary><strong>♿ Accessibility — 3 agents</strong></summary>
+
+ADA Compliance Specialist · Digital Accessibility Auditor · Inclusive Design Consultant
+
+</details>
+
+<details>
+<summary><strong>🎓 Academic — 5 agents</strong></summary>
+
+Anthropologist · Geographer · Historian · Narratologist · Psychologist
+
+</details>
+
+<details>
+<summary><strong>🧑‍💻 Solopreneur — 8 agents</strong></summary>
+
+Bootstrapper Finance · Fractional CFO · Fractional CTO · Full-Stack Solo Dev · One-Person Marketing · Solo Customer Success · Solo Founder · Virtual Executive Assistant
+
+</details>
+
+<details>
+<summary><strong>📋 Project Management — 6 agents</strong></summary>
+
+Experiment Tracker · Jira Workflow Steward · Project Shepherd · Senior Project Manager · Studio Operations · Studio Producer
+
+</details>
+
+<details>
+<summary><strong>🤝 Customer Success — 5 agents</strong></summary>
+
+Customer Success Manager · Implementation Consultant · Onboarding Specialist · Renewal Manager · Technical Account Manager
+
+</details>
+
+<details>
+<summary><strong>🎮 Game Development — 20 agents</strong></summary>
+
+Blender Add-on Engineer · Game Audio Engineer · Game Designer · Godot Gameplay Scripter · Godot Multiplayer Engineer · Godot Shader Developer · Level Designer · Narrative Designer · Roblox Avatar Creator · Roblox Experience Designer · Roblox Systems Scripter · Technical Artist · Unity Architect · Unity Editor Tool Developer · Unity Multiplayer Engineer · Unity Shader Graph Artist · Unreal Multiplayer Architect · Unreal Systems Engineer · Unreal Technical Artist · Unreal World Builder
+
+</details>
+
+<details>
+<summary><strong>🥽 Spatial Computing — 6 agents</strong></summary>
+
+macOS Spatial/Metal Engineer · Terminal Integration Specialist · visionOS Spatial Engineer · XR Cockpit Interaction Specialist · XR Immersive Developer · XR Interface Architect
+
+</details>
+
+<details>
+<summary><strong>🔬 Specialized — 28 agents</strong></summary>
+
+Accounts Payable Agent · Agentic Identity & Trust Architect · Agents Orchestrator · Automation Governance Architect · Blockchain Security Auditor · Civil Engineer · Compliance Auditor · Corporate Training Designer · Cultural Intelligence Strategist · Data Consolidation Agent · Developer Advocate · Document Generator · French Consulting Market Navigator · Government Digital Presales Consultant · Healthcare Marketing Compliance Specialist · Identity Graph Operator · Korean Business Navigator · LSP/Index Engineer · MCP Builder · Model QA Specialist · Recruitment Specialist · Report Distribution Agent · Sales Data Extraction Agent · Salesforce Architect · Study Abroad Advisor · Supply Chain Strategist · Workflow Architect · ZK Steward
 
 </details>
 
